@@ -5,4 +5,12 @@ export class AppService {
   getHello(): string {
     return "Hello World???!";
   }
+  getUsers(): Services.User[] {
+    const arr = [];
+    for (let i = 0; i < 100; i++) {
+      arr.push({ name: "name" + i, index: i });
+    }
+
+    return arr;
+  }
 }

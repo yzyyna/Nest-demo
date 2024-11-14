@@ -19,4 +19,7 @@ export class AppService {
     console.log("%c ~ editUser name ~ ", "color:#2ecc71", form);
     return form;
   }
+  getInOut() {
+    return "??";
+  }
 }
